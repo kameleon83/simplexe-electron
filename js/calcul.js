@@ -289,12 +289,12 @@ function afficherResultat(tab){
     r = tab[tab.length - 1][tab[tab.length - 1].length - 1]
 
     let str = ""
-    str += `<p>La marge sur coût variable maximum est de ${r*-1}</p>`
+    str += `<p>La marge sur coût variable maximum est de ${Number.isInteger(r) ? r * -1 : (r * -1).toFixed(3)}</p>`
     str += `<p>Les quantités produites sont de : </p>`
     str += `<ul class="list-group">`
-    if (x != null) str += `<li class="list-group-item">x = ${x}</li>`;
-    if (y != null) str += `<li class="list-group-item">y = ${y}</li>`;
-    if (z != null) str += `<li class="list-group-item">z = ${z}</li>`;
+    if (x != null) str += `<li class="list-group-item">x = ${Number.isInteger(x) ? x : x.toFixed(3)}</li>`;
+    if (y != null) str += `<li class="list-group-item">y = ${Number.isInteger(y) ? y : y.toFixed(3)}</li>`;
+    if (z != null) str += `<li class="list-group-item">z = ${Number.isInteger(z) ? z : z.toFixed(3)}</li>`;
     str += `</ul>`
 
     $('.table_simplexe').data('ite',nbr_ite-1).append(str)

@@ -37,10 +37,47 @@ function disableInputResult(){
     })
 }
 
+function disableInputVar(){
+    var x,y,z,r;
+    $('.start .row').each(function(e){
+        let i = e + 1;
+        x += $(this).find('.X-'+i).val();
+        y += $(this).find('.Y-'+i).val();
+        z += $(this).find('.Z-'+i).val();
+        r += $(this).find('.result-'+i).val();
+
+    })
+    console.log(r.length);
+    if (x.length < 10) {
+        $('.MaxX').attr('disabled', true).val("")
+    }else{
+        $('.MaxX').attr('disabled', false)
+    }
+    if (y.length < 10) {
+        $('.MaxY').attr('disabled', true).val("")
+    }else{
+        $('.MaxY').attr('disabled', false)
+    }
+
+    if (z.length < 10) {
+        $('.MaxZ').attr('disabled', true).val("")
+    }else{
+        $('.MaxZ').attr('disabled', false)
+    }
+
+    if (r.length < 10 ) {
+        $('.submit').attr('disabled', true)
+    }else{
+        $('.submit').attr('disabled', false)
+
+    }
+}
+
 disableInputResult()
 
 $('input').on('keyup click', function(){
     disableInputResult()
+    disableInputVar()
 })
 
 function tab_std(){

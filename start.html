@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Méthode de Simplexe</title>
+</head>
+<body>
+    <div class="container-fluid start">
+        <button type="button" class="btn btn-default return">
+            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span> Back
+        </button>
+        <h1>C'est parti</h1>
+
+        <div class="row">
+            <div class="col-sm-offset-1 col-sm-2">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">X</button>
+                    </span>
+                    <input type="number" class="form-control X-1" value="">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Y</button>
+                    </span>
+                    <input type="number" class="form-control Y-1" value="">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Z</button>
+                    </span>
+                    <input type="number" class="form-control Z-1" value="">
+                </div>
+            </div>
+            <div class="col-sm-1">
+                <button class="btn btn-default" type="button">&le;</button>
+            </div>
+            <div class="col-sm-3">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Result</button>
+                    </span>
+                    <input type="number" class="form-control result-1" value="">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-offset-1 col-sm-2">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">X</button>
+                    </span>
+                    <input type="number" class="form-control X-2" value="">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Y</button>
+                    </span>
+                    <input type="number" class="form-control Y-2">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Z</button>
+                    </span>
+                    <input type="number" class="form-control Z-2">
+                </div>
+            </div>
+            <div class="col-sm-1">
+                <button class="btn btn-default" type="button">&le;</button>
+            </div>
+            <div class="col-sm-3">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Result</button>
+                    </span>
+                    <input type="number" class="form-control result-2" value="">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-offset-1 col-sm-2">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">X</button>
+                    </span>
+                    <input type="number" class="form-control X-3">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Y</button>
+                    </span>
+                    <input type="number" class="form-control Y-3" value="">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Z</button>
+                    </span>
+                    <input type="number" class="form-control Z-3">
+                </div>
+            </div>
+            <div class="col-sm-1">
+                <button class="btn btn-default" type="button">&le;</button>
+            </div>
+            <div class="col-sm-3">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Result</button>
+                    </span>
+                    <input type="number" class="form-control result-3" value="">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-offset-1 col-sm-2">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">X</button>
+                    </span>
+                    <input type="number" class="form-control X-4">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Y</button>
+                    </span>
+                    <input type="number" class="form-control Y-4">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Z</button>
+                    </span>
+                    <input type="number" class="form-control Z-4">
+                </div>
+            </div>
+            <div class="col-sm-1">
+                <button class="btn btn-default" type="button">&le;</button>
+            </div>
+            <div class="col-sm-3">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Result</button>
+                    </span>
+                    <input type="number" class="form-control result-4">
+                </div>
+            </div>
+        </div>
+        <br>
+        <h4>Par defaut : X &ge; 0 - Y &ge; 0 - Z &ge; 0</h4>
+        <br>
+        <div class="row_max">
+            <div class="col-sm-offset-1 col-sm-2">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">X</button>
+                    </span>
+                    <input type="number" class="form-control MaxX" value="">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Y</button>
+                    </span>
+                    <input type="number" class="form-control MaxY" value="">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Z</button>
+                    </span>
+                    <input type="number" class="form-control MaxZ">
+                </div>
+            </div>
+            <div class="col-sm-1">
+                <button class="btn btn-default" type="button">&#61;</button>
+            </div>
+            <div class="col-sm-2">
+                <button class="btn btn-default col-sm-12" type="button">Max</button>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="see_tab">
+            <button type="button" class="btn btn-info btn-lg" name="button" onclick="affiche_tab()">Résolution</button>
+        </div>
+
+        <br>
+        <br>
+
+        <!-- <div class="">
+            <a href="calcul.html" class="btn btn-info btn-lg" onclick="affiche_tab()">
+                Résolution
+            </a>
+        </div> -->
+    </div>
+
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap-select.min.js"></script>
+    <script>if (window.module) module = window.module;</script>
+    <script src="./js/start.js" charset="utf-8"></script>
+    <script src="main.js" charset="utf-8"></script>
+
+</body>
+</html>

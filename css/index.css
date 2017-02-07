@@ -1,0 +1,79 @@
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    -webkit-app-region: drag;
+}
+
+html h1, body h1 {
+    padding: 10px;
+}
+
+html .return, body .return {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 10px;
+}
+
+html .div_start, body .div_start {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+html .div_start a, body .div_start a {
+    display: block;
+    width: 50%;
+    height: 80px;
+    line-height: 80px;
+    font-size: 2em;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+    color: inherit;
+}
+
+html table, body table {
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+html table thead th, body table thead th {
+    text-align: center;
+}
+
+html table tbody .final, body table tbody .final {
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+html p, body p {
+    font-size: 1.4em;
+}
+
+html .list-group-item, body .list-group-item {
+    background-color: transparent;
+    border: none;
+    font-size: 1.4em;
+}
+
+html .pivot, body .pivot {
+    z-index: 1;
+    background-color: rgba(255, 0, 0, 0.4);
+}

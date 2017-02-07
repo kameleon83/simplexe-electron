@@ -1,0 +1,19 @@
+{
+  "name": "Methode du Simplexe",
+  "version": "1.0.0",
+  "description": "Ceci est un logiciel permettant de calculer via la méthode de simplexe.\nCependant, j'ai limité à 3 variables et 4 contraintes maximum\nAmusez-vous bien.",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "author": "Sokys - Samuel Michaux",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "electron": "^1.4.15"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
+    "remote": "^0.2.6"
+  }
+}

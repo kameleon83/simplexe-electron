@@ -47,21 +47,32 @@ function disableInputVar(){
         r += $(this).find('.result-'+i).val();
 
     })
-    console.log(r.length);
     if (x.length < 10) {
         $('.MaxX').attr('disabled', true).val("")
+        $('.by-default span.default-x').remove()
     }else{
+        if (!$('.by-default span').hasClass("default-x")){
+            $('.by-default').append("<span class='default-x'>X &ge; 0</span>")
+        }
         $('.MaxX').attr('disabled', false)
     }
     if (y.length < 10) {
         $('.MaxY').attr('disabled', true).val("")
+        $('.by-default span.default-y').remove()
     }else{
+        if (!$('.by-default span').hasClass("default-y")){
+            $('.by-default').append("<span class='default-y'>Y &ge; 0</span>")
+        }
         $('.MaxY').attr('disabled', false)
     }
 
     if (z.length < 10) {
         $('.MaxZ').attr('disabled', true).val("")
+        $('.by-default span.default-z').remove()
     }else{
+        if (!$('.by-default span').hasClass("default-z")){
+            $('.by-default').append("<span class='default-z'>Z &ge; 0</span>")
+        }
         $('.MaxZ').attr('disabled', false)
     }
 
@@ -70,6 +81,14 @@ function disableInputVar(){
     }else{
         $('.submit').attr('disabled', false)
 
+    }
+
+    if (!$('.by-default span').hasClass('default-x') && !$('.by-default span').hasClass('default-y') && !$('.by-default span').hasClass('default-z')) {
+        $('.default-str').remove()
+    }else{
+        if (!$('.by-default span').hasClass("default-str")){
+            $('.by-default').prepend('<span class="default-str">Par défault : </span>')
+        }
     }
 }
 

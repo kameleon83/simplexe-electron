@@ -77,3 +77,7 @@ html .pivot, body .pivot {
     z-index: 1;
     background-color: rgba(255, 0, 0, 0.4);
 }
+
+html .by-default span, body .by-default span {
+    margin: 5px;
+}

@@ -1,5 +1,5 @@
 {
-  "name": "Methode du Simplexe",
+  "name": "Simplexe",
   "version": "1.0.0",
   "description": "Ceci est un logiciel permettant de calculer via la méthode de simplexe.\nCependant, j'ai limité à 3 variables et 4 contraintes maximum\nAmusez-vous bien.",
   "main": "main.js",
@@ -9,7 +9,9 @@
   "author": "Sokys - Samuel Michaux",
   "license": "GPL-3.0",
   "devDependencies": {
-    "electron": "^1.4.15"
+    "electron": "^1.4.15",
+    "electron-packager": "^8.5.1",
+    "electron-winstaller": "^2.5.2"
   },
   "dependencies": {
     "bootstrap": "^3.3.7",

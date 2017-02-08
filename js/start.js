@@ -18,6 +18,7 @@ class MaxSimplexe {
 }
 
 $('.return').click(function(){
+    localStorage.clear();
     window.history.back()
 })
 
@@ -135,12 +136,15 @@ function affiche_tab(){
             var_ecart.push(`e${i+1}`);
             if (t[i].x.length > 0) {
                 xTrue = true
+                localStorage.setItem("xTrue", xTrue)
             }
             if (t[i].y.length > 0) {
                 yTrue = true
+                localStorage.setItem("yTrue", yTrue)
             }
             if (t[i].z.length > 0) {
                 zTrue = true
+                localStorage.setItem("zTrue", zTrue)
             }
         }
     }

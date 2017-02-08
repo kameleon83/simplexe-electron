@@ -292,12 +292,25 @@ function afficherResultat(tab){
     str += `<p>La marge sur coût variable maximum est de ${Number.isInteger(r) ? r * -1 : (r * -1).toFixed(3)}</p>`
     str += `<p>Les quantités produites sont de : </p>`
     str += `<ul class="list-group">`
-    if (x != null) str += `<li class="list-group-item">x = ${Number.isInteger(x) ? x : x.toFixed(3)}</li>`;
-    if (y != null) str += `<li class="list-group-item">y = ${Number.isInteger(y) ? y : y.toFixed(3)}</li>`;
-    if (z != null) str += `<li class="list-group-item">z = ${Number.isInteger(z) ? z : z.toFixed(3)}</li>`;
+    if (x != null){
+        str += `<li class="list-group-item">x = ${Number.isInteger(x) ? x : x.toFixed(3)}</li>`
+    }else if (localStorage.getItem("xTrue")) {
+        str += `<li class="list-group-item">x = 0</li>`
+    }
+    if (y != null){
+        str += `<li class="list-group-item">y = ${Number.isInteger(y) ? y : y.toFixed(3)}</li>`
+    }else if (localStorage.getItem("yTrue")) {
+        str += `<li class="list-group-item">y = 0</li>`
+    }
+    if (z != null){
+        str += `<li class="list-group-item">z = ${Number.isInteger(z) ? z : z.toFixed(3)}</li>`
+    }else if (localStorage.getItem("zTrue")) {
+        str += `<li class="list-group-item">z = 0</li>`;
+    }
     str += `</ul>`
 
     $('.table_simplexe').data('ite',nbr_ite-1).append(str)
+    localStorage.clear();
 }
 
 afficherResultat(lastTab)
